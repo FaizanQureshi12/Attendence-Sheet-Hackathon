@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hackathon.css">
+  
+</head>
+<body>
+  
+    <form onsubmit="doLogin(event)">
+        <fieldset id="box">
+                 <center>
+                <h1 align="center">lOG IN</h1>
+                Email :&nbsp;
+                <input type="email" placeholder="abc@gmail.com" required 
+                id="email" maxlength="18"><br><br>
+                Password :
+                <input id="password" type="password" placeholder="Password " 
+                name="Password" required />
+
+                <span id="showPasswordButton" onclick="toggleShowPassword()" class="btn">
+                    <i class="fa-solid fa-eye"></i>
+                </span><br>
+                <br>
+                <a href="" style="color:violet;">
+                     Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./add class details.html">
+                    <!-- <button type=""> -->
+                        Next
+                    <!-- </button> -->
+                </a>
+                    <br><br>
+                <a href="sign up.html" style="color:violet;"> Create An Account</a><br>
+                <br>
+                <b id="error" style="color: red"></b>
+                <b id="result"></b>
+            </center>
+        </fieldset>
+</body>
+<script src="hackathon.js"></script>
+</html>
